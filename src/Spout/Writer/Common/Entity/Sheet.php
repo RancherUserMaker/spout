@@ -26,6 +26,9 @@ class Sheet
 
     /** @var SheetManager Sheet manager */
     private $sheetManager;
+    
+    /** @var merge cell */
+    private $mergeRanges;
 
     /**
      * @param int $sheetIndex Index of the sheet, based on order in the workbook (zero-based)
@@ -107,5 +110,22 @@ class Sheet
         $this->isVisible = $isVisible;
 
         return $this;
+    }
+    
+     /**
+     * @return merge
+     */
+    public function getMergeRanges()
+    {
+        return $this->mergeRanges;
+    }
+
+    /**
+     * @param $mergeRanges
+     * @return mixed
+     */
+    public function setMergeRanges($mergeRanges)
+    {
+        return $this->mergeRanges = $mergeRanges;
     }
 }
