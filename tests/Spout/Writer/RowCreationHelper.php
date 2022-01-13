@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Writer;
+namespace Rancherusermaker\Spout\Writer;
 
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Entity\Style\Style;
-use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
+use Rancherusermaker\Spout\Common\Entity\Row;
+use Rancherusermaker\Spout\Common\Entity\Style\Style;
+use Rancherusermaker\Spout\Writer\Common\Creator\WriterEntityFactory;
 
 /**
  * Trait RowCreationHelper

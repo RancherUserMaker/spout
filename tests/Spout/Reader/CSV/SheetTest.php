@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Reader\CSV;
+namespace Rancherusermaker\Spout\Reader\CSV;
 
-use Box\Spout\Reader\Common\Creator\ReaderEntityFactory;
-use Box\Spout\TestUsingResource;
+use Rancherusermaker\Spout\Reader\Common\Creator\ReaderEntityFactory;
+use Rancherusermaker\Spout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

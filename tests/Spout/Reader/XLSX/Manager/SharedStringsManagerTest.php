@@ -1,15 +1,15 @@
 <?php
 
-namespace Box\Spout\Reader\XLSX\Manager;
+namespace Rancherusermaker\Spout\Reader\XLSX\Manager;
 
-use Box\Spout\Reader\Exception\SharedStringNotFoundException;
-use Box\Spout\Reader\XLSX\Creator\HelperFactory;
-use Box\Spout\Reader\XLSX\Creator\InternalEntityFactory;
-use Box\Spout\Reader\XLSX\Creator\ManagerFactory;
-use Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
-use Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\FileBasedStrategy;
-use Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\InMemoryStrategy;
-use Box\Spout\TestUsingResource;
+use Rancherusermaker\Spout\Reader\Exception\SharedStringNotFoundException;
+use Rancherusermaker\Spout\Reader\XLSX\Creator\HelperFactory;
+use Rancherusermaker\Spout\Reader\XLSX\Creator\InternalEntityFactory;
+use Rancherusermaker\Spout\Reader\XLSX\Creator\ManagerFactory;
+use Rancherusermaker\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
+use Rancherusermaker\Spout\Reader\XLSX\Manager\SharedStringsCaching\FileBasedStrategy;
+use Rancherusermaker\Spout\Reader\XLSX\Manager\SharedStringsCaching\InMemoryStrategy;
+use Rancherusermaker\Spout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

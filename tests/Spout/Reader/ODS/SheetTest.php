@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Reader\ODS;
+namespace Rancherusermaker\Spout\Reader\ODS;
 
-use Box\Spout\Reader\Common\Creator\ReaderEntityFactory;
-use Box\Spout\TestUsingResource;
+use Rancherusermaker\Spout\Reader\Common\Creator\ReaderEntityFactory;
+use Rancherusermaker\Spout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

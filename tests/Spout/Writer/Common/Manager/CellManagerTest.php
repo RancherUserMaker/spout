@@ -2,10 +2,10 @@
 
 namespace Spout\Writer\Common\Manager;
 
-use Box\Spout\Common\Entity\Cell;
-use Box\Spout\Writer\Common\Creator\Style\StyleBuilder;
-use Box\Spout\Writer\Common\Manager\CellManager;
-use Box\Spout\Writer\Common\Manager\Style\StyleMerger;
+use Rancherusermaker\Spout\Common\Entity\Cell;
+use Rancherusermaker\Spout\Writer\Common\Creator\Style\StyleBuilder;
+use Rancherusermaker\Spout\Writer\Common\Manager\CellManager;
+use Rancherusermaker\Spout\Writer\Common\Manager\Style\StyleMerger;
 use PHPUnit\Framework\TestCase;
 
 class CellManagerTest extends TestCase

@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Common\Helper;
+namespace Rancherusermaker\Spout\Common\Helper;
 
-use Box\Spout\Common\Exception\IOException;
+use Rancherusermaker\Spout\Common\Exception\IOException;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
  */
 class FileSystemHelperTest extends TestCase
 {
-    /** @var \Box\Spout\Writer\XLSX\Helper\FileSystemHelper */
+    /** @var \Rancherusermaker\Spout\Writer\XLSX\Helper\FileSystemHelper */
     protected $fileSystemHelper;
 
     /**

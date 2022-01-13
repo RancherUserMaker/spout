@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Reader\XLSX\Helper;
+namespace Rancherusermaker\Spout\Reader\XLSX\Helper;
 
-use Box\Spout\Common\Helper\Escaper;
-use Box\Spout\Reader\Exception\InvalidValueException;
-use Box\Spout\Reader\XLSX\Manager\StyleManager;
+use Rancherusermaker\Spout\Common\Helper\Escaper;
+use Rancherusermaker\Spout\Reader\Exception\InvalidValueException;
+use Rancherusermaker\Spout\Reader\XLSX\Manager\StyleManager;
 use PHPUnit\Framework\TestCase;
 
 /**

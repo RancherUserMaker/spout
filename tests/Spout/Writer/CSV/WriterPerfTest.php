@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Writer\CSV;
+namespace Rancherusermaker\Spout\Writer\CSV;
 
-use Box\Spout\TestUsingResource;
-use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
+use Rancherusermaker\Spout\TestUsingResource;
+use Rancherusermaker\Spout\Writer\Common\Creator\WriterEntityFactory;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -1,12 +1,12 @@
 <?php
 
-namespace Box\Spout\Reader\Common\Manager;
+namespace Rancherusermaker\Spout\Reader\Common\Manager;
 
-use Box\Spout\Common\Entity\Cell;
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Reader\XLSX\Creator\HelperFactory;
-use Box\Spout\Reader\XLSX\Creator\InternalEntityFactory;
-use Box\Spout\Reader\XLSX\Creator\ManagerFactory;
+use Rancherusermaker\Spout\Common\Entity\Cell;
+use Rancherusermaker\Spout\Common\Entity\Row;
+use Rancherusermaker\Spout\Reader\XLSX\Creator\HelperFactory;
+use Rancherusermaker\Spout\Reader\XLSX\Creator\InternalEntityFactory;
+use Rancherusermaker\Spout\Reader\XLSX\Creator\ManagerFactory;
 use PHPUnit\Framework\TestCase;
 
 /**

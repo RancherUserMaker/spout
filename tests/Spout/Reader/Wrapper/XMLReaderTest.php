@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Reader\Wrapper;
+namespace Rancherusermaker\Spout\Reader\Wrapper;
 
-use Box\Spout\Reader\Exception\XMLProcessingException;
-use Box\Spout\TestUsingResource;
+use Rancherusermaker\Spout\Reader\Exception\XMLProcessingException;
+use Rancherusermaker\Spout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

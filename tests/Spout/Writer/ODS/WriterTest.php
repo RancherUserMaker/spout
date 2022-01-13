@@ -1,18 +1,18 @@
 <?php
 
-namespace Box\Spout\Writer\ODS;
+namespace Rancherusermaker\Spout\Writer\ODS;
 
-use Box\Spout\Common\Entity\Cell;
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Exception\InvalidArgumentException;
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Common\Exception\SpoutException;
-use Box\Spout\Reader\Wrapper\XMLReader;
-use Box\Spout\TestUsingResource;
-use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
-use Box\Spout\Writer\Exception\WriterAlreadyOpenedException;
-use Box\Spout\Writer\Exception\WriterNotOpenedException;
-use Box\Spout\Writer\RowCreationHelper;
+use Rancherusermaker\Spout\Common\Entity\Cell;
+use Rancherusermaker\Spout\Common\Entity\Row;
+use Rancherusermaker\Spout\Common\Exception\InvalidArgumentException;
+use Rancherusermaker\Spout\Common\Exception\IOException;
+use Rancherusermaker\Spout\Common\Exception\SpoutException;
+use Rancherusermaker\Spout\Reader\Wrapper\XMLReader;
+use Rancherusermaker\Spout\TestUsingResource;
+use Rancherusermaker\Spout\Writer\Common\Creator\WriterEntityFactory;
+use Rancherusermaker\Spout\Writer\Exception\WriterAlreadyOpenedException;
+use Rancherusermaker\Spout\Writer\Exception\WriterNotOpenedException;
+use Rancherusermaker\Spout\Writer\RowCreationHelper;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -449,7 +449,7 @@ class WriterTest extends TestCase
         ]);
 
         // set the maxRowsPerSheet limit to 2
-        \ReflectionHelper::setStaticValue('\Box\Spout\Writer\ODS\Manager\WorkbookManager', 'maxRowsPerWorksheet', 2);
+        \ReflectionHelper::setStaticValue('\Rancherusermaker\Spout\Writer\ODS\Manager\WorkbookManager', 'maxRowsPerWorksheet', 2);
 
         $writer = $this->writeToODSFile($dataRows, $fileName, $shouldCreateSheetsAutomatically = true);
         $this->assertCount(2, $writer->getSheets(), '2 sheets should have been created.');
@@ -473,7 +473,7 @@ class WriterTest extends TestCase
         ]);
 
         // set the maxRowsPerSheet limit to 2
-        \ReflectionHelper::setStaticValue('\Box\Spout\Writer\ODS\Manager\WorkbookManager', 'maxRowsPerWorksheet', 2);
+        \ReflectionHelper::setStaticValue('\Rancherusermaker\Spout\Writer\ODS\Manager\WorkbookManager', 'maxRowsPerWorksheet', 2);
 
         $writer = $this->writeToODSFile($dataRows, $fileName, $shouldCreateSheetsAutomatically = false);
         $this->assertCount(1, $writer->getSheets(), 'Only 1 sheet should have been created.');

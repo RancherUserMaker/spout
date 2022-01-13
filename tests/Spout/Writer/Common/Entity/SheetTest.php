@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Entity;
+namespace Rancherusermaker\Spout\Writer\Common\Entity;
 
-use Box\Spout\Common\Helper\StringHelper;
-use Box\Spout\Writer\Common\Manager\SheetManager;
-use Box\Spout\Writer\Exception\InvalidSheetNameException;
+use Rancherusermaker\Spout\Common\Helper\StringHelper;
+use Rancherusermaker\Spout\Writer\Common\Manager\SheetManager;
+use Rancherusermaker\Spout\Writer\Exception\InvalidSheetNameException;
 use PHPUnit\Framework\TestCase;
 
 /**

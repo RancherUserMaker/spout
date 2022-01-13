@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Reader\XLSX\Manager;
+namespace Rancherusermaker\Spout\Reader\XLSX\Manager;
 
-use Box\Spout\Reader\XLSX\Creator\InternalEntityFactory;
+use Rancherusermaker\Spout\Reader\XLSX\Creator\InternalEntityFactory;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -22,7 +22,7 @@ class StyleManagerTest extends TestCase
         $workbookRelationshipsManager->method('hasStylesXMLFile')->willReturn(true);
 
         /** @var StyleManager $styleManager */
-        $styleManager = $this->getMockBuilder('\Box\Spout\Reader\XLSX\Manager\StyleManager')
+        $styleManager = $this->getMockBuilder('\Rancherusermaker\Spout\Reader\XLSX\Manager\StyleManager')
                              ->setConstructorArgs(['/path/to/file.xlsx', $workbookRelationshipsManager, $entityFactory])
                              ->setMethods(['getCustomNumberFormats', 'getStylesAttributes'])
                              ->getMock();

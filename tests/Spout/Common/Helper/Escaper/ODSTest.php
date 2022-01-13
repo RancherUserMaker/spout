@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Common\Helper\Escaper;
+namespace Rancherusermaker\Spout\Common\Helper\Escaper;
 
-use Box\Spout\Common\Helper\Escaper;
+use Rancherusermaker\Spout\Common\Helper\Escaper;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -1,12 +1,12 @@
 <?php
 
-namespace Box\Spout\Writer\ODS;
+namespace Rancherusermaker\Spout\Writer\ODS;
 
-use Box\Spout\TestUsingResource;
-use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
-use Box\Spout\Writer\Common\Entity\Sheet;
-use Box\Spout\Writer\Exception\InvalidSheetNameException;
-use Box\Spout\Writer\RowCreationHelper;
+use Rancherusermaker\Spout\TestUsingResource;
+use Rancherusermaker\Spout\Writer\Common\Creator\WriterEntityFactory;
+use Rancherusermaker\Spout\Writer\Common\Entity\Sheet;
+use Rancherusermaker\Spout\Writer\Exception\InvalidSheetNameException;
+use Rancherusermaker\Spout\Writer\RowCreationHelper;
 use PHPUnit\Framework\TestCase;
 
 /**

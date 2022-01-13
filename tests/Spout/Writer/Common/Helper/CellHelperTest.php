@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Helper;
+namespace Rancherusermaker\Spout\Writer\Common\Helper;
 
 use PHPUnit\Framework\TestCase;
 

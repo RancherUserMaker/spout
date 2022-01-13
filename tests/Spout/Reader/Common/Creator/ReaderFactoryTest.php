@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Reader\Common\Creator;
+namespace Rancherusermaker\Spout\Reader\Common\Creator;
 
-use Box\Spout\Common\Exception\UnsupportedTypeException;
-use Box\Spout\TestUsingResource;
+use Rancherusermaker\Spout\Common\Exception\UnsupportedTypeException;
+use Rancherusermaker\Spout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -20,7 +20,7 @@ class ReaderFactoryTest extends TestCase
     {
         $validCsv = $this->getResourcePath('csv_test_create_from_file.csv');
         $reader = ReaderFactory::createFromFile($validCsv);
-        $this->assertInstanceOf('Box\Spout\Reader\CSV\Reader', $reader);
+        $this->assertInstanceOf('Rancherusermaker\Spout\Reader\CSV\Reader', $reader);
     }
 
     /**
@@ -30,7 +30,7 @@ class ReaderFactoryTest extends TestCase
     {
         $validCsv = $this->getResourcePath('csv_test_create_from_file.CSV');
         $reader = ReaderFactory::createFromFile($validCsv);
-        $this->assertInstanceOf('Box\Spout\Reader\CSV\Reader', $reader);
+        $this->assertInstanceOf('Rancherusermaker\Spout\Reader\CSV\Reader', $reader);
     }
 
     /**
@@ -40,7 +40,7 @@ class ReaderFactoryTest extends TestCase
     {
         $validOds = $this->getResourcePath('csv_test_create_from_file.ods');
         $reader = ReaderFactory::createFromFile($validOds);
-        $this->assertInstanceOf('Box\Spout\Reader\ODS\Reader', $reader);
+        $this->assertInstanceOf('Rancherusermaker\Spout\Reader\ODS\Reader', $reader);
     }
 
     /**
@@ -50,7 +50,7 @@ class ReaderFactoryTest extends TestCase
     {
         $validXlsx = $this->getResourcePath('csv_test_create_from_file.xlsx');
         $reader = ReaderFactory::createFromFile($validXlsx);
-        $this->assertInstanceOf('Box\Spout\Reader\XLSX\Reader', $reader);
+        $this->assertInstanceOf('Rancherusermaker\Spout\Reader\XLSX\Reader', $reader);
     }
 
     /**
@@ -80,6 +80,6 @@ class ReaderFactoryTest extends TestCase
     {
         $notExistingFile = 'thereisnosuchfile.csv';
         $reader = ReaderEntityFactory::createReaderFromFile($notExistingFile);
-        $this->assertInstanceOf('Box\Spout\Reader\CSV\Reader', $reader);
+        $this->assertInstanceOf('Rancherusermaker\Spout\Reader\CSV\Reader', $reader);
     }
 }

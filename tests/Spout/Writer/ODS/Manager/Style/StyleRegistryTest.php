@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Writer\ODS\Manager\Style;
+namespace Rancherusermaker\Spout\Writer\ODS\Manager\Style;
 
-use Box\Spout\Writer\Common\Creator\Style\StyleBuilder;
+use Rancherusermaker\Spout\Writer\Common\Creator\Style\StyleBuilder;
 use PHPUnit\Framework\TestCase;
 
 /**

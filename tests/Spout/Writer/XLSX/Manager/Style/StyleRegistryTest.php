@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Writer\XLSX\Manager\Style;
+namespace Rancherusermaker\Spout\Writer\XLSX\Manager\Style;
 
-use Box\Spout\Common\Entity\Style\Color;
-use Box\Spout\Writer\Common\Creator\Style\BorderBuilder;
-use Box\Spout\Writer\Common\Creator\Style\StyleBuilder;
+use Rancherusermaker\Spout\Common\Entity\Style\Color;
+use Rancherusermaker\Spout\Writer\Common\Creator\Style\BorderBuilder;
+use Rancherusermaker\Spout\Writer\Common\Creator\Style\StyleBuilder;
 use PHPUnit\Framework\TestCase;
 
 /**

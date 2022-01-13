@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Reader\XLSX\Manager\SharedStringsCaching;
+namespace Rancherusermaker\Spout\Reader\XLSX\Manager\SharedStringsCaching;
 
-use Box\Spout\Reader\XLSX\Creator\HelperFactory;
+use Rancherusermaker\Spout\Reader\XLSX\Creator\HelperFactory;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -38,7 +38,7 @@ class CachingStrategyFactoryTest extends TestCase
     {
         /** @var CachingStrategyFactory|\PHPUnit_Framework_MockObject_MockObject $factoryStub */
         $factoryStub = $this
-            ->getMockBuilder('\Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory')
+            ->getMockBuilder('\Rancherusermaker\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory')
             ->disableOriginalConstructor()
             ->setMethods(['getMemoryLimitInKB'])
             ->getMock();
@@ -49,7 +49,7 @@ class CachingStrategyFactoryTest extends TestCase
         $helperFactory = new HelperFactory($factoryStub);
         $strategy = $factoryStub->createBestCachingStrategy($sharedStringsUniqueCount, $tempFolder, $helperFactory);
 
-        $fullExpectedStrategyClassName = 'Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\\' . $expectedStrategyClassName;
+        $fullExpectedStrategyClassName = 'Rancherusermaker\Spout\Reader\XLSX\Manager\SharedStringsCaching\\' . $expectedStrategyClassName;
         $this->assertEquals($fullExpectedStrategyClassName, get_class($strategy));
 
         $strategy->clearCache();
@@ -86,7 +86,7 @@ class CachingStrategyFactoryTest extends TestCase
     {
         /** @var CachingStrategyFactory|\PHPUnit_Framework_MockObject_MockObject $factoryStub */
         $factoryStub = $this
-            ->getMockBuilder('\Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory')
+            ->getMockBuilder('\Rancherusermaker\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory')
             ->disableOriginalConstructor()
             ->setMethods(['getMemoryLimitFromIni'])
             ->getMock();

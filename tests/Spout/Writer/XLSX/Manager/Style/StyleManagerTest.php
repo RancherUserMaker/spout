@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Writer\XLSX\Manager\Style;
+namespace Rancherusermaker\Spout\Writer\XLSX\Manager\Style;
 
 use PHPUnit\Framework\TestCase;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout;
+namespace Rancherusermaker\Spout;
 
 /**
  * Trait TestUsingResource

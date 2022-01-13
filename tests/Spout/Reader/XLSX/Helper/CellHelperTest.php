@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Reader\XLSX\Helper;
+namespace Rancherusermaker\Spout\Reader\XLSX\Helper;
 
-use Box\Spout\Common\Exception\InvalidArgumentException;
+use Rancherusermaker\Spout\Common\Exception\InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Manager\Style;
+namespace Rancherusermaker\Spout\Writer\Common\Manager\Style;
 
-use Box\Spout\Common\Entity\Style\Color;
-use Box\Spout\Common\Entity\Style\Style;
-use Box\Spout\Writer\Common\Creator\Style\StyleBuilder;
+use Rancherusermaker\Spout\Common\Entity\Style\Color;
+use Rancherusermaker\Spout\Common\Entity\Style\Style;
+use Rancherusermaker\Spout\Writer\Common\Creator\Style\StyleBuilder;
 use PHPUnit\Framework\TestCase;
 
 /**

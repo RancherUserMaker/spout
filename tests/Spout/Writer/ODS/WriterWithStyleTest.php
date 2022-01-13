@@ -1,19 +1,19 @@
 <?php
 
-namespace Box\Spout\Writer\ODS;
+namespace Rancherusermaker\Spout\Writer\ODS;
 
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Entity\Style\Border;
-use Box\Spout\Common\Entity\Style\CellAlignment;
-use Box\Spout\Common\Entity\Style\Color;
-use Box\Spout\Common\Entity\Style\Style;
-use Box\Spout\Reader\Wrapper\XMLReader;
-use Box\Spout\TestUsingResource;
-use Box\Spout\Writer\Common\Creator\Style\BorderBuilder;
-use Box\Spout\Writer\Common\Creator\Style\StyleBuilder;
-use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
-use Box\Spout\Writer\Exception\WriterNotOpenedException;
-use Box\Spout\Writer\RowCreationHelper;
+use Rancherusermaker\Spout\Common\Entity\Row;
+use Rancherusermaker\Spout\Common\Entity\Style\Border;
+use Rancherusermaker\Spout\Common\Entity\Style\CellAlignment;
+use Rancherusermaker\Spout\Common\Entity\Style\Color;
+use Rancherusermaker\Spout\Common\Entity\Style\Style;
+use Rancherusermaker\Spout\Reader\Wrapper\XMLReader;
+use Rancherusermaker\Spout\TestUsingResource;
+use Rancherusermaker\Spout\Writer\Common\Creator\Style\BorderBuilder;
+use Rancherusermaker\Spout\Writer\Common\Creator\Style\StyleBuilder;
+use Rancherusermaker\Spout\Writer\Common\Creator\WriterEntityFactory;
+use Rancherusermaker\Spout\Writer\Exception\WriterNotOpenedException;
+use Rancherusermaker\Spout\Writer\RowCreationHelper;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -303,8 +303,8 @@ class WriterWithStyleTest extends TestCase
         $this->assertCount(3, $styleElements, 'There should be 3 styles)');
 
         // Use reflection for protected members here
-        $widthMap = \ReflectionHelper::getStaticValue('Box\Spout\Writer\ODS\Helper\BorderHelper', 'widthMap');
-        $styleMap = \ReflectionHelper::getStaticValue('Box\Spout\Writer\ODS\Helper\BorderHelper', 'styleMap');
+        $widthMap = \ReflectionHelper::getStaticValue('Rancherusermaker\Spout\Writer\ODS\Helper\BorderHelper', 'widthMap');
+        $styleMap = \ReflectionHelper::getStaticValue('Rancherusermaker\Spout\Writer\ODS\Helper\BorderHelper', 'styleMap');
 
         $expectedFirst = sprintf(
             '%s %s #%s',

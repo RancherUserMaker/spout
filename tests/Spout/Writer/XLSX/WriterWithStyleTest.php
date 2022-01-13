@@ -1,21 +1,21 @@
 <?php
 
-namespace Box\Spout\Writer\XLSX;
+namespace Rancherusermaker\Spout\Writer\XLSX;
 
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Entity\Style\Border;
-use Box\Spout\Common\Entity\Style\CellAlignment;
-use Box\Spout\Common\Entity\Style\Color;
-use Box\Spout\Common\Entity\Style\Style;
-use Box\Spout\Reader\Wrapper\XMLReader;
-use Box\Spout\TestUsingResource;
-use Box\Spout\Writer\Common\Creator\Style\BorderBuilder;
-use Box\Spout\Writer\Common\Creator\Style\StyleBuilder;
-use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
-use Box\Spout\Writer\Common\Manager\Style\StyleMerger;
-use Box\Spout\Writer\Exception\WriterNotOpenedException;
-use Box\Spout\Writer\RowCreationHelper;
-use Box\Spout\Writer\XLSX\Manager\OptionsManager;
+use Rancherusermaker\Spout\Common\Entity\Row;
+use Rancherusermaker\Spout\Common\Entity\Style\Border;
+use Rancherusermaker\Spout\Common\Entity\Style\CellAlignment;
+use Rancherusermaker\Spout\Common\Entity\Style\Color;
+use Rancherusermaker\Spout\Common\Entity\Style\Style;
+use Rancherusermaker\Spout\Reader\Wrapper\XMLReader;
+use Rancherusermaker\Spout\TestUsingResource;
+use Rancherusermaker\Spout\Writer\Common\Creator\Style\BorderBuilder;
+use Rancherusermaker\Spout\Writer\Common\Creator\Style\StyleBuilder;
+use Rancherusermaker\Spout\Writer\Common\Creator\WriterEntityFactory;
+use Rancherusermaker\Spout\Writer\Common\Manager\Style\StyleMerger;
+use Rancherusermaker\Spout\Writer\Exception\WriterNotOpenedException;
+use Rancherusermaker\Spout\Writer\RowCreationHelper;
+use Rancherusermaker\Spout\Writer\XLSX\Manager\OptionsManager;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -26,7 +26,7 @@ class WriterWithStyleTest extends TestCase
     use TestUsingResource;
     use RowCreationHelper;
 
-    /** @var \Box\Spout\Common\Entity\Style\Style */
+    /** @var \Rancherusermaker\Spout\Common\Entity\Style\Style */
     private $defaultStyle;
 
     /**
@@ -585,7 +585,7 @@ class WriterWithStyleTest extends TestCase
     /**
      * @param Row[] $allRows
      * @param string $fileName
-     * @param \Box\Spout\Common\Entity\Style\Style|null $defaultStyle
+     * @param \Rancherusermaker\Spout\Common\Entity\Style\Style|null $defaultStyle
      * @return Writer
      */
     private function writeToXLSXFileWithDefaultStyle($allRows, $fileName, $defaultStyle)

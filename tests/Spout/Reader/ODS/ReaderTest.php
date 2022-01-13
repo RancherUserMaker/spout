@@ -1,11 +1,11 @@
 <?php
 
-namespace Box\Spout\Reader\ODS;
+namespace Rancherusermaker\Spout\Reader\ODS;
 
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Reader\Common\Creator\ReaderEntityFactory;
-use Box\Spout\Reader\Exception\IteratorNotRewindableException;
-use Box\Spout\TestUsingResource;
+use Rancherusermaker\Spout\Common\Exception\IOException;
+use Rancherusermaker\Spout\Reader\Common\Creator\ReaderEntityFactory;
+use Rancherusermaker\Spout\Reader\Exception\IteratorNotRewindableException;
+use Rancherusermaker\Spout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Reader\XLSX;
+namespace Rancherusermaker\Spout\Reader\XLSX;
 
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Reader\Common\Creator\ReaderEntityFactory;
-use Box\Spout\TestUsingResource;
+use Rancherusermaker\Spout\Common\Exception\IOException;
+use Rancherusermaker\Spout\Reader\Common\Creator\ReaderEntityFactory;
+use Rancherusermaker\Spout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

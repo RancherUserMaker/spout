@@ -1,16 +1,16 @@
 <?php
 
-namespace Box\Spout\Reader\CSV;
+namespace Rancherusermaker\Spout\Reader\CSV;
 
-use Box\Spout\Common\Creator\HelperFactory;
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Common\Helper\EncodingHelper;
-use Box\Spout\Common\Helper\GlobalFunctionsHelper;
-use Box\Spout\Reader\CSV\Creator\InternalEntityFactory;
-use Box\Spout\Reader\CSV\Manager\OptionsManager;
-use Box\Spout\Reader\Exception\ReaderNotOpenedException;
-use Box\Spout\Reader\ReaderInterface;
-use Box\Spout\TestUsingResource;
+use Rancherusermaker\Spout\Common\Creator\HelperFactory;
+use Rancherusermaker\Spout\Common\Exception\IOException;
+use Rancherusermaker\Spout\Common\Helper\EncodingHelper;
+use Rancherusermaker\Spout\Common\Helper\GlobalFunctionsHelper;
+use Rancherusermaker\Spout\Reader\CSV\Creator\InternalEntityFactory;
+use Rancherusermaker\Spout\Reader\CSV\Manager\OptionsManager;
+use Rancherusermaker\Spout\Reader\Exception\ReaderNotOpenedException;
+use Rancherusermaker\Spout\Reader\ReaderInterface;
+use Rancherusermaker\Spout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -47,8 +47,8 @@ class ReaderTest extends TestCase
     {
         $this->expectException(IOException::class);
 
-        /** @var \Box\Spout\Common\Helper\GlobalFunctionsHelper|\PHPUnit_Framework_MockObject_MockObject $helperStub */
-        $helperStub = $this->getMockBuilder('\Box\Spout\Common\Helper\GlobalFunctionsHelper')
+        /** @var \Rancherusermaker\Spout\Common\Helper\GlobalFunctionsHelper|\PHPUnit_Framework_MockObject_MockObject $helperStub */
+        $helperStub = $this->getMockBuilder('\Rancherusermaker\Spout\Common\Helper\GlobalFunctionsHelper')
                         ->setMethods(['is_readable'])
                         ->getMock();
         $helperStub->method('is_readable')->willReturn(false);
@@ -66,8 +66,8 @@ class ReaderTest extends TestCase
     {
         $this->expectException(IOException::class);
 
-        /** @var \Box\Spout\Common\Helper\GlobalFunctionsHelper|\PHPUnit_Framework_MockObject_MockObject $helperStub */
-        $helperStub = $this->getMockBuilder('\Box\Spout\Common\Helper\GlobalFunctionsHelper')
+        /** @var \Rancherusermaker\Spout\Common\Helper\GlobalFunctionsHelper|\PHPUnit_Framework_MockObject_MockObject $helperStub */
+        $helperStub = $this->getMockBuilder('\Rancherusermaker\Spout\Common\Helper\GlobalFunctionsHelper')
                         ->setMethods(['fopen'])
                         ->getMock();
         $helperStub->method('fopen')->willReturn(false);
@@ -304,8 +304,8 @@ class ReaderTest extends TestCase
         $allRows = [];
         $resourcePath = $this->getResourcePath($fileName);
 
-        /** @var \Box\Spout\Common\Helper\GlobalFunctionsHelper|\PHPUnit_Framework_MockObject_MockObject $helperStub */
-        $helperStub = $this->getMockBuilder('\Box\Spout\Common\Helper\GlobalFunctionsHelper')
+        /** @var \Rancherusermaker\Spout\Common\Helper\GlobalFunctionsHelper|\PHPUnit_Framework_MockObject_MockObject $helperStub */
+        $helperStub = $this->getMockBuilder('\Rancherusermaker\Spout\Common\Helper\GlobalFunctionsHelper')
                         ->setMethods(['function_exists'])
                         ->getMock();
 
@@ -315,7 +315,7 @@ class ReaderTest extends TestCase
         ];
         $helperStub->method('function_exists')->will($this->returnValueMap($returnValueMap));
 
-        /** @var \Box\Spout\Reader\CSV\Reader $reader */
+        /** @var \Rancherusermaker\Spout\Reader\CSV\Reader $reader */
         $reader = $this->createCSVReader(null, $helperStub);
         $reader
             ->setEncoding($fileEncoding)
@@ -442,7 +442,7 @@ class ReaderTest extends TestCase
         // register stream wrapper
         stream_wrapper_register('spout', SpoutTestStream::CLASS_NAME);
 
-        /** @var \Box\Spout\Reader\CSV\Reader $reader */
+        /** @var \Rancherusermaker\Spout\Reader\CSV\Reader $reader */
         $reader = $this->createCSVReader();
         $reader->open($resourcePath);
 
@@ -472,14 +472,14 @@ class ReaderTest extends TestCase
     {
         $this->expectException(IOException::class);
 
-        /** @var \Box\Spout\Reader\CSV\Reader $reader */
+        /** @var \Rancherusermaker\Spout\Reader\CSV\Reader $reader */
         $reader = $this->createCSVReader();
         $reader->open('unsupported://foobar');
     }
 
     /**
-     * @param \Box\Spout\Common\Helper\GlobalFunctionsHelper|null $optionsManager
-     * @param \Box\Spout\Common\Manager\OptionsManagerInterface|null $globalFunctionsHelper
+     * @param \Rancherusermaker\Spout\Common\Helper\GlobalFunctionsHelper|null $optionsManager
+     * @param \Rancherusermaker\Spout\Common\Manager\OptionsManagerInterface|null $globalFunctionsHelper
      * @return ReaderInterface
      */
     private function createCSVReader($optionsManager = null, $globalFunctionsHelper = null)
@@ -509,7 +509,7 @@ class ReaderTest extends TestCase
         $allRows = [];
         $resourcePath = $this->getResourcePath($fileName);
 
-        /** @var \Box\Spout\Reader\CSV\Reader $reader */
+        /** @var \Rancherusermaker\Spout\Reader\CSV\Reader $reader */
         $reader = $this->createCSVReader();
         $reader
             ->setFieldDelimiter($fieldDelimiter)

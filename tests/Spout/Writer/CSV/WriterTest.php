@@ -1,15 +1,15 @@
 <?php
 
-namespace Box\Spout\Writer\CSV;
+namespace Rancherusermaker\Spout\Writer\CSV;
 
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Exception\InvalidArgumentException;
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Common\Helper\EncodingHelper;
-use Box\Spout\TestUsingResource;
-use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
-use Box\Spout\Writer\Exception\WriterNotOpenedException;
-use Box\Spout\Writer\RowCreationHelper;
+use Rancherusermaker\Spout\Common\Entity\Row;
+use Rancherusermaker\Spout\Common\Exception\InvalidArgumentException;
+use Rancherusermaker\Spout\Common\Exception\IOException;
+use Rancherusermaker\Spout\Common\Helper\EncodingHelper;
+use Rancherusermaker\Spout\TestUsingResource;
+use Rancherusermaker\Spout\Writer\Common\Creator\WriterEntityFactory;
+use Rancherusermaker\Spout\Writer\Exception\WriterNotOpenedException;
+use Rancherusermaker\Spout\Writer\RowCreationHelper;
 use PHPUnit\Framework\TestCase;
 
 /**

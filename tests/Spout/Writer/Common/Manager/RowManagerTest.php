@@ -2,9 +2,9 @@
 
 namespace Spout\Writer\Common\Manager;
 
-use Box\Spout\Common\Entity\Cell;
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Writer\Common\Manager\RowManager;
+use Rancherusermaker\Spout\Common\Entity\Cell;
+use Rancherusermaker\Spout\Common\Entity\Row;
+use Rancherusermaker\Spout\Writer\Common\Manager\RowManager;
 use PHPUnit\Framework\TestCase;
 
 class RowManagerTest extends TestCase
