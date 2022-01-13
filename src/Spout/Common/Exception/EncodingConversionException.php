@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Common\Exception;
+namespace Rancherusermaker\Spout\Common\Exception;
 
 /**
  * Class EncodingConversionException

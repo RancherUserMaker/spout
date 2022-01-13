@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Common;
+namespace Rancherusermaker\Spout\Common;
 
 /**
  * Class Type

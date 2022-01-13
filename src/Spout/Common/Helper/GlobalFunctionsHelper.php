@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Common\Helper;
+namespace Rancherusermaker\Spout\Common\Helper;
 
 /**
  * Class GlobalFunctionsHelper

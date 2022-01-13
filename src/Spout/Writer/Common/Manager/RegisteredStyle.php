@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Manager;
+namespace Rancherusermaker\Spout\Writer\Common\Manager;
 
-use Box\Spout\Common\Entity\Style\Style;
+use Rancherusermaker\Spout\Common\Entity\Style\Style;
 
 /**
  * Class RegisteredStyle

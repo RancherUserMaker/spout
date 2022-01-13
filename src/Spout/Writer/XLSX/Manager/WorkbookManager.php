@@ -1,11 +1,11 @@
 <?php
 
-namespace Box\Spout\Writer\XLSX\Manager;
+namespace Rancherusermaker\Spout\Writer\XLSX\Manager;
 
-use Box\Spout\Writer\Common\Entity\Sheet;
-use Box\Spout\Writer\Common\Manager\WorkbookManagerAbstract;
-use Box\Spout\Writer\XLSX\Helper\FileSystemHelper;
-use Box\Spout\Writer\XLSX\Manager\Style\StyleManager;
+use Rancherusermaker\Spout\Writer\Common\Entity\Sheet;
+use Rancherusermaker\Spout\Writer\Common\Manager\WorkbookManagerAbstract;
+use Rancherusermaker\Spout\Writer\XLSX\Helper\FileSystemHelper;
+use Rancherusermaker\Spout\Writer\XLSX\Manager\Style\StyleManager;
 
 /**
  * Class WorkbookManager

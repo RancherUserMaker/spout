@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Reader;
+namespace Rancherusermaker\Spout\Reader;
 
 /**
  * Interface SheetInterface

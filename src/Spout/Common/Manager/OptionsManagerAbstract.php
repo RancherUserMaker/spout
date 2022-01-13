@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Common\Manager;
+namespace Rancherusermaker\Spout\Common\Manager;
 
 /**
  * Class OptionsManager

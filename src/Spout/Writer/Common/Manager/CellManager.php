@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Manager;
+namespace Rancherusermaker\Spout\Writer\Common\Manager;
 
-use Box\Spout\Common\Entity\Cell;
-use Box\Spout\Common\Entity\Style\Style;
-use Box\Spout\Writer\Common\Manager\Style\StyleMerger;
+use Rancherusermaker\Spout\Common\Entity\Cell;
+use Rancherusermaker\Spout\Common\Entity\Style\Style;
+use Rancherusermaker\Spout\Writer\Common\Manager\Style\StyleMerger;
 
 class CellManager
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Reader\ODS\Manager;
+namespace Rancherusermaker\Spout\Reader\ODS\Manager;
 
-use Box\Spout\Common\Manager\OptionsManagerAbstract;
-use Box\Spout\Reader\Common\Entity\Options;
+use Rancherusermaker\Spout\Common\Manager\OptionsManagerAbstract;
+use Rancherusermaker\Spout\Reader\Common\Entity\Options;
 
 /**
  * Class OptionsManager

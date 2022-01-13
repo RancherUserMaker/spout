@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Common\Entity\Style;
+namespace Rancherusermaker\Spout\Common\Entity\Style;
 
-use Box\Spout\Writer\Exception\Border\InvalidNameException;
-use Box\Spout\Writer\Exception\Border\InvalidStyleException;
-use Box\Spout\Writer\Exception\Border\InvalidWidthException;
+use Rancherusermaker\Spout\Writer\Exception\Border\InvalidNameException;
+use Rancherusermaker\Spout\Writer\Exception\Border\InvalidStyleException;
+use Rancherusermaker\Spout\Writer\Exception\Border\InvalidWidthException;
 
 /**
  * Class BorderPart

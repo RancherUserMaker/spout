@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Common\Entity\Style;
+namespace Rancherusermaker\Spout\Common\Entity\Style;
 
 /**
  * Class Style

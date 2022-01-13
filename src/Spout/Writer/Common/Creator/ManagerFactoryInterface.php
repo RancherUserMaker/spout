@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Creator;
+namespace Rancherusermaker\Spout\Writer\Common\Creator;
 
-use Box\Spout\Common\Manager\OptionsManagerInterface;
-use Box\Spout\Writer\Common\Manager\SheetManager;
-use Box\Spout\Writer\Common\Manager\WorkbookManagerInterface;
+use Rancherusermaker\Spout\Common\Manager\OptionsManagerInterface;
+use Rancherusermaker\Spout\Writer\Common\Manager\SheetManager;
+use Rancherusermaker\Spout\Writer\Common\Manager\WorkbookManagerInterface;
 
 /**
  * Interface ManagerFactoryInterface

@@ -1,20 +1,20 @@
 <?php
 
-namespace Box\Spout\Writer\XLSX\Creator;
+namespace Rancherusermaker\Spout\Writer\XLSX\Creator;
 
-use Box\Spout\Common\Helper\Escaper;
-use Box\Spout\Common\Helper\StringHelper;
-use Box\Spout\Common\Manager\OptionsManagerInterface;
-use Box\Spout\Writer\Common\Creator\InternalEntityFactory;
-use Box\Spout\Writer\Common\Entity\Options;
-use Box\Spout\Writer\Common\Helper\ZipHelper;
-use Box\Spout\Writer\XLSX\Helper\FileSystemHelper;
+use Rancherusermaker\Spout\Common\Helper\Escaper;
+use Rancherusermaker\Spout\Common\Helper\StringHelper;
+use Rancherusermaker\Spout\Common\Manager\OptionsManagerInterface;
+use Rancherusermaker\Spout\Writer\Common\Creator\InternalEntityFactory;
+use Rancherusermaker\Spout\Writer\Common\Entity\Options;
+use Rancherusermaker\Spout\Writer\Common\Helper\ZipHelper;
+use Rancherusermaker\Spout\Writer\XLSX\Helper\FileSystemHelper;
 
 /**
  * Class HelperFactory
  * Factory for helpers needed by the XLSX Writer
  */
-class HelperFactory extends \Box\Spout\Common\Creator\HelperFactory
+class HelperFactory extends \Rancherusermaker\Spout\Common\Creator\HelperFactory
 {
     /**
      * @param OptionsManagerInterface $optionsManager

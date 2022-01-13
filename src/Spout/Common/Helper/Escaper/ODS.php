@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Common\Helper\Escaper;
+namespace Rancherusermaker\Spout\Common\Helper\Escaper;
 
 /**
  * Class ODS
@@ -21,7 +21,7 @@ class ODS implements EscaperInterface
         if (\defined('ENT_DISALLOWED')) {
             // 'ENT_DISALLOWED' ensures that invalid characters in the given document type are replaced.
             // Otherwise control characters like a vertical tab "\v" will make the XML document unreadable by the XML processor
-            // @link https://github.com/box/spout/issues/329
+            // @link https://github.com/Rancherusermaker/spout/issues/329
             $replacedString = \htmlspecialchars($string, ENT_QUOTES | ENT_DISALLOWED, 'UTF-8');
         } else {
             // We are on hhvm or any other engine that does not support ENT_DISALLOWED.

@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Writer\Exception;
+namespace Rancherusermaker\Spout\Writer\Exception;
 
-use Box\Spout\Common\Exception\SpoutException;
+use Rancherusermaker\Spout\Common\Exception\SpoutException;
 
 /**
  * Class WriterException

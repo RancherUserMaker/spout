@@ -1,18 +1,18 @@
 <?php
 
-namespace Box\Spout\Writer;
+namespace Rancherusermaker\Spout\Writer;
 
-use Box\Spout\Common\Creator\HelperFactory;
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Entity\Style\Style;
-use Box\Spout\Common\Exception\InvalidArgumentException;
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Common\Exception\SpoutException;
-use Box\Spout\Common\Helper\GlobalFunctionsHelper;
-use Box\Spout\Common\Manager\OptionsManagerInterface;
-use Box\Spout\Writer\Common\Entity\Options;
-use Box\Spout\Writer\Exception\WriterAlreadyOpenedException;
-use Box\Spout\Writer\Exception\WriterNotOpenedException;
+use Rancherusermaker\Spout\Common\Creator\HelperFactory;
+use Rancherusermaker\Spout\Common\Entity\Row;
+use Rancherusermaker\Spout\Common\Entity\Style\Style;
+use Rancherusermaker\Spout\Common\Exception\InvalidArgumentException;
+use Rancherusermaker\Spout\Common\Exception\IOException;
+use Rancherusermaker\Spout\Common\Exception\SpoutException;
+use Rancherusermaker\Spout\Common\Helper\GlobalFunctionsHelper;
+use Rancherusermaker\Spout\Common\Manager\OptionsManagerInterface;
+use Rancherusermaker\Spout\Writer\Common\Entity\Options;
+use Rancherusermaker\Spout\Writer\Exception\WriterAlreadyOpenedException;
+use Rancherusermaker\Spout\Writer\Exception\WriterNotOpenedException;
 
 /**
  * Class WriterAbstract
@@ -120,7 +120,7 @@ abstract class WriterAbstract implements WriterInterface
         $this->throwIfFilePointerIsNotAvailable();
 
         // Clear any previous output (otherwise the generated file will be corrupted)
-        // @see https://github.com/box/spout/issues/241
+        // @see https://github.com/Rancherusermaker/spout/issues/241
         $this->globalFunctionsHelper->ob_end_clean();
 
         /*
@@ -133,7 +133,7 @@ abstract class WriterAbstract implements WriterInterface
          * In this way, the multi-browser multi-language compatibility problem is perfectly solved, which does not
          * require UA judgment and is more in line with the standard.
          *
-         * @see https://github.com/box/spout/issues/745
+         * @see https://github.com/Rancherusermaker/spout/issues/745
          * @see https://tools.ietf.org/html/rfc6266
          * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition
          */

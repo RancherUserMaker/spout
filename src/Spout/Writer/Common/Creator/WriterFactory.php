@@ -1,23 +1,23 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Creator;
+namespace Rancherusermaker\Spout\Writer\Common\Creator;
 
-use Box\Spout\Common\Creator\HelperFactory;
-use Box\Spout\Common\Exception\UnsupportedTypeException;
-use Box\Spout\Common\Helper\GlobalFunctionsHelper;
-use Box\Spout\Common\Type;
-use Box\Spout\Writer\Common\Creator\Style\StyleBuilder;
-use Box\Spout\Writer\CSV\Manager\OptionsManager as CSVOptionsManager;
-use Box\Spout\Writer\CSV\Writer as CSVWriter;
-use Box\Spout\Writer\ODS\Creator\HelperFactory as ODSHelperFactory;
-use Box\Spout\Writer\ODS\Creator\ManagerFactory as ODSManagerFactory;
-use Box\Spout\Writer\ODS\Manager\OptionsManager as ODSOptionsManager;
-use Box\Spout\Writer\ODS\Writer as ODSWriter;
-use Box\Spout\Writer\WriterInterface;
-use Box\Spout\Writer\XLSX\Creator\HelperFactory as XLSXHelperFactory;
-use Box\Spout\Writer\XLSX\Creator\ManagerFactory as XLSXManagerFactory;
-use Box\Spout\Writer\XLSX\Manager\OptionsManager as XLSXOptionsManager;
-use Box\Spout\Writer\XLSX\Writer as XLSXWriter;
+use Rancherusermaker\Spout\Common\Creator\HelperFactory;
+use Rancherusermaker\Spout\Common\Exception\UnsupportedTypeException;
+use Rancherusermaker\Spout\Common\Helper\GlobalFunctionsHelper;
+use Rancherusermaker\Spout\Common\Type;
+use Rancherusermaker\Spout\Writer\Common\Creator\Style\StyleBuilder;
+use Rancherusermaker\Spout\Writer\CSV\Manager\OptionsManager as CSVOptionsManager;
+use Rancherusermaker\Spout\Writer\CSV\Writer as CSVWriter;
+use Rancherusermaker\Spout\Writer\ODS\Creator\HelperFactory as ODSHelperFactory;
+use Rancherusermaker\Spout\Writer\ODS\Creator\ManagerFactory as ODSManagerFactory;
+use Rancherusermaker\Spout\Writer\ODS\Manager\OptionsManager as ODSOptionsManager;
+use Rancherusermaker\Spout\Writer\ODS\Writer as ODSWriter;
+use Rancherusermaker\Spout\Writer\WriterInterface;
+use Rancherusermaker\Spout\Writer\XLSX\Creator\HelperFactory as XLSXHelperFactory;
+use Rancherusermaker\Spout\Writer\XLSX\Creator\ManagerFactory as XLSXManagerFactory;
+use Rancherusermaker\Spout\Writer\XLSX\Manager\OptionsManager as XLSXOptionsManager;
+use Rancherusermaker\Spout\Writer\XLSX\Writer as XLSXWriter;
 
 /**
  * Class WriterFactory
@@ -30,7 +30,7 @@ class WriterFactory
      * This creates an instance of the appropriate writer, given the extension of the file to be written
      *
      * @param string $path The path to the spreadsheet file. Supported extensions are .csv,.ods and .xlsx
-     * @throws \Box\Spout\Common\Exception\UnsupportedTypeException
+     * @throws \Rancherusermaker\Spout\Common\Exception\UnsupportedTypeException
      * @return WriterInterface
      */
     public static function createFromFile(string $path)
@@ -44,7 +44,7 @@ class WriterFactory
      * This creates an instance of the appropriate writer, given the type of the file to be written
      *
      * @param string $writerType Type of the writer to instantiate
-     * @throws \Box\Spout\Common\Exception\UnsupportedTypeException
+     * @throws \Rancherusermaker\Spout\Common\Exception\UnsupportedTypeException
      * @return WriterInterface
      */
     public static function createFromType($writerType)

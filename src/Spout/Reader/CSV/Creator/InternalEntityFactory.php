@@ -1,16 +1,16 @@
 <?php
 
-namespace Box\Spout\Reader\CSV\Creator;
+namespace Rancherusermaker\Spout\Reader\CSV\Creator;
 
-use Box\Spout\Common\Creator\HelperFactory;
-use Box\Spout\Common\Entity\Cell;
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Helper\GlobalFunctionsHelper;
-use Box\Spout\Common\Manager\OptionsManagerInterface;
-use Box\Spout\Reader\Common\Creator\InternalEntityFactoryInterface;
-use Box\Spout\Reader\CSV\RowIterator;
-use Box\Spout\Reader\CSV\Sheet;
-use Box\Spout\Reader\CSV\SheetIterator;
+use Rancherusermaker\Spout\Common\Creator\HelperFactory;
+use Rancherusermaker\Spout\Common\Entity\Cell;
+use Rancherusermaker\Spout\Common\Entity\Row;
+use Rancherusermaker\Spout\Common\Helper\GlobalFunctionsHelper;
+use Rancherusermaker\Spout\Common\Manager\OptionsManagerInterface;
+use Rancherusermaker\Spout\Reader\Common\Creator\InternalEntityFactoryInterface;
+use Rancherusermaker\Spout\Reader\CSV\RowIterator;
+use Rancherusermaker\Spout\Reader\CSV\Sheet;
+use Rancherusermaker\Spout\Reader\CSV\SheetIterator;
 
 /**
  * Class EntityFactory

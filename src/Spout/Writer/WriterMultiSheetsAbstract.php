@@ -1,19 +1,19 @@
 <?php
 
-namespace Box\Spout\Writer;
+namespace Rancherusermaker\Spout\Writer;
 
-use Box\Spout\Common\Creator\HelperFactory;
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Helper\GlobalFunctionsHelper;
-use Box\Spout\Common\Manager\OptionsManagerInterface;
-use Box\Spout\Writer\Common\Creator\ManagerFactoryInterface;
-use Box\Spout\Writer\Common\Entity\Options;
-use Box\Spout\Writer\Common\Entity\Sheet;
-use Box\Spout\Writer\Common\Entity\Worksheet;
-use Box\Spout\Writer\Common\Manager\WorkbookManagerInterface;
-use Box\Spout\Writer\Exception\SheetNotFoundException;
-use Box\Spout\Writer\Exception\WriterAlreadyOpenedException;
-use Box\Spout\Writer\Exception\WriterNotOpenedException;
+use Rancherusermaker\Spout\Common\Creator\HelperFactory;
+use Rancherusermaker\Spout\Common\Entity\Row;
+use Rancherusermaker\Spout\Common\Helper\GlobalFunctionsHelper;
+use Rancherusermaker\Spout\Common\Manager\OptionsManagerInterface;
+use Rancherusermaker\Spout\Writer\Common\Creator\ManagerFactoryInterface;
+use Rancherusermaker\Spout\Writer\Common\Entity\Options;
+use Rancherusermaker\Spout\Writer\Common\Entity\Sheet;
+use Rancherusermaker\Spout\Writer\Common\Entity\Worksheet;
+use Rancherusermaker\Spout\Writer\Common\Manager\WorkbookManagerInterface;
+use Rancherusermaker\Spout\Writer\Exception\SheetNotFoundException;
+use Rancherusermaker\Spout\Writer\Exception\WriterAlreadyOpenedException;
+use Rancherusermaker\Spout\Writer\Exception\WriterNotOpenedException;
 
 /**
  * Class WriterMultiSheetsAbstract

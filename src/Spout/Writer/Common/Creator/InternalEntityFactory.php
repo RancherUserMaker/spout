@@ -1,11 +1,11 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Creator;
+namespace Rancherusermaker\Spout\Writer\Common\Creator;
 
-use Box\Spout\Writer\Common\Entity\Sheet;
-use Box\Spout\Writer\Common\Entity\Workbook;
-use Box\Spout\Writer\Common\Entity\Worksheet;
-use Box\Spout\Writer\Common\Manager\SheetManager;
+use Rancherusermaker\Spout\Writer\Common\Entity\Sheet;
+use Rancherusermaker\Spout\Writer\Common\Entity\Workbook;
+use Rancherusermaker\Spout\Writer\Common\Entity\Worksheet;
+use Rancherusermaker\Spout\Writer\Common\Manager\SheetManager;
 
 /**
  * Class InternalEntityFactory

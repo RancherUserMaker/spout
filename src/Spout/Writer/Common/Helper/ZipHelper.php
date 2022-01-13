@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Helper;
+namespace Rancherusermaker\Spout\Writer\Common\Helper;
 
-use Box\Spout\Writer\Common\Creator\InternalEntityFactory;
+use Rancherusermaker\Spout\Writer\Common\Creator\InternalEntityFactory;
 
 /**
  * Class ZipHelper

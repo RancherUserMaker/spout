@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Writer\XLSX\Helper;
+namespace Rancherusermaker\Spout\Writer\XLSX\Helper;
 
-use Box\Spout\Common\Entity\Style\Border;
-use Box\Spout\Common\Entity\Style\BorderPart;
+use Rancherusermaker\Spout\Common\Entity\Style\Border;
+use Rancherusermaker\Spout\Common\Entity\Style\BorderPart;
 
 class BorderHelper
 {

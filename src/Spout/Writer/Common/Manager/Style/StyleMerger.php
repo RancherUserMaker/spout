@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Manager\Style;
+namespace Rancherusermaker\Spout\Writer\Common\Manager\Style;
 
-use Box\Spout\Common\Entity\Style\Style;
+use Rancherusermaker\Spout\Common\Entity\Style\Style;
 
 /**
  * Class StyleMerger

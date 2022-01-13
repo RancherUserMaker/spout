@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Reader\ODS\Helper;
+namespace Rancherusermaker\Spout\Reader\ODS\Helper;
 
-use Box\Spout\Reader\Exception\XMLProcessingException;
-use Box\Spout\Reader\ODS\Creator\InternalEntityFactory;
+use Rancherusermaker\Spout\Reader\Exception\XMLProcessingException;
+use Rancherusermaker\Spout\Reader\ODS\Creator\InternalEntityFactory;
 
 /**
  * Class SettingsHelper

@@ -1,14 +1,14 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Manager;
+namespace Rancherusermaker\Spout\Writer\Common\Manager;
 
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Writer\Common\Entity\Sheet;
-use Box\Spout\Writer\Common\Entity\Workbook;
-use Box\Spout\Writer\Common\Entity\Worksheet;
-use Box\Spout\Writer\Exception\SheetNotFoundException;
-use Box\Spout\Writer\Exception\WriterException;
+use Rancherusermaker\Spout\Common\Entity\Row;
+use Rancherusermaker\Spout\Common\Exception\IOException;
+use Rancherusermaker\Spout\Writer\Common\Entity\Sheet;
+use Rancherusermaker\Spout\Writer\Common\Entity\Workbook;
+use Rancherusermaker\Spout\Writer\Common\Entity\Worksheet;
+use Rancherusermaker\Spout\Writer\Exception\SheetNotFoundException;
+use Rancherusermaker\Spout\Writer\Exception\WriterException;
 
 /**
  * Interface WorkbookManagerInterface

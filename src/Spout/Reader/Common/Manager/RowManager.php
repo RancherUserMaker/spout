@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Reader\Common\Manager;
+namespace Rancherusermaker\Spout\Reader\Common\Manager;
 
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Reader\Common\Creator\InternalEntityFactoryInterface;
+use Rancherusermaker\Spout\Common\Entity\Row;
+use Rancherusermaker\Spout\Reader\Common\Creator\InternalEntityFactoryInterface;
 
 /**
  * Class RowManager
@@ -59,7 +59,7 @@ class RowManager
         // If the row has empty cells, calling "setCellAtIndex" will add the cell
         // but in the wrong place (the new cell is added at the end of the array).
         // Therefore, we need to sort the array using keys to have proper order.
-        // @see https://github.com/box/spout/issues/740
+        // @see https://github.com/Rancherusermaker/spout/issues/740
         $needsSorting = false;
 
         for ($cellIndex = 0; $cellIndex < $maxCellIndex; $cellIndex++) {

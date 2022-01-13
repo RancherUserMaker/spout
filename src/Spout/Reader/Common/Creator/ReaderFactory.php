@@ -1,25 +1,25 @@
 <?php
 
-namespace Box\Spout\Reader\Common\Creator;
+namespace Rancherusermaker\Spout\Reader\Common\Creator;
 
-use Box\Spout\Common\Creator\HelperFactory;
-use Box\Spout\Common\Exception\UnsupportedTypeException;
-use Box\Spout\Common\Type;
-use Box\Spout\Reader\CSV\Creator\InternalEntityFactory as CSVInternalEntityFactory;
-use Box\Spout\Reader\CSV\Manager\OptionsManager as CSVOptionsManager;
-use Box\Spout\Reader\CSV\Reader as CSVReader;
-use Box\Spout\Reader\ODS\Creator\HelperFactory as ODSHelperFactory;
-use Box\Spout\Reader\ODS\Creator\InternalEntityFactory as ODSInternalEntityFactory;
-use Box\Spout\Reader\ODS\Creator\ManagerFactory as ODSManagerFactory;
-use Box\Spout\Reader\ODS\Manager\OptionsManager as ODSOptionsManager;
-use Box\Spout\Reader\ODS\Reader as ODSReader;
-use Box\Spout\Reader\ReaderInterface;
-use Box\Spout\Reader\XLSX\Creator\HelperFactory as XLSXHelperFactory;
-use Box\Spout\Reader\XLSX\Creator\InternalEntityFactory as XLSXInternalEntityFactory;
-use Box\Spout\Reader\XLSX\Creator\ManagerFactory as XLSXManagerFactory;
-use Box\Spout\Reader\XLSX\Manager\OptionsManager as XLSXOptionsManager;
-use Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
-use Box\Spout\Reader\XLSX\Reader as XLSXReader;
+use Rancherusermaker\Spout\Common\Creator\HelperFactory;
+use Rancherusermaker\Spout\Common\Exception\UnsupportedTypeException;
+use Rancherusermaker\Spout\Common\Type;
+use Rancherusermaker\Spout\Reader\CSV\Creator\InternalEntityFactory as CSVInternalEntityFactory;
+use Rancherusermaker\Spout\Reader\CSV\Manager\OptionsManager as CSVOptionsManager;
+use Rancherusermaker\Spout\Reader\CSV\Reader as CSVReader;
+use Rancherusermaker\Spout\Reader\ODS\Creator\HelperFactory as ODSHelperFactory;
+use Rancherusermaker\Spout\Reader\ODS\Creator\InternalEntityFactory as ODSInternalEntityFactory;
+use Rancherusermaker\Spout\Reader\ODS\Creator\ManagerFactory as ODSManagerFactory;
+use Rancherusermaker\Spout\Reader\ODS\Manager\OptionsManager as ODSOptionsManager;
+use Rancherusermaker\Spout\Reader\ODS\Reader as ODSReader;
+use Rancherusermaker\Spout\Reader\ReaderInterface;
+use Rancherusermaker\Spout\Reader\XLSX\Creator\HelperFactory as XLSXHelperFactory;
+use Rancherusermaker\Spout\Reader\XLSX\Creator\InternalEntityFactory as XLSXInternalEntityFactory;
+use Rancherusermaker\Spout\Reader\XLSX\Creator\ManagerFactory as XLSXManagerFactory;
+use Rancherusermaker\Spout\Reader\XLSX\Manager\OptionsManager as XLSXOptionsManager;
+use Rancherusermaker\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
+use Rancherusermaker\Spout\Reader\XLSX\Reader as XLSXReader;
 
 /**
  * Class ReaderFactory
@@ -32,7 +32,7 @@ class ReaderFactory
      * Creates a reader by file extension
      *
      * @param string $path The path to the spreadsheet file. Supported extensions are .csv,.ods and .xlsx
-     * @throws \Box\Spout\Common\Exception\UnsupportedTypeException
+     * @throws \Rancherusermaker\Spout\Common\Exception\UnsupportedTypeException
      * @return ReaderInterface
      */
     public static function createFromFile(string $path)
@@ -46,7 +46,7 @@ class ReaderFactory
      * This creates an instance of the appropriate reader, given the type of the file to be read
      *
      * @param  string $readerType Type of the reader to instantiate
-     * @throws \Box\Spout\Common\Exception\UnsupportedTypeException
+     * @throws \Rancherusermaker\Spout\Common\Exception\UnsupportedTypeException
      * @return ReaderInterface
      */
     public static function createFromType($readerType)

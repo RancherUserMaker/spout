@@ -1,14 +1,14 @@
 <?php
 
-namespace Box\Spout\Writer\ODS\Manager\Style;
+namespace Rancherusermaker\Spout\Writer\ODS\Manager\Style;
 
-use Box\Spout\Common\Entity\Style\Style;
+use Rancherusermaker\Spout\Common\Entity\Style\Style;
 
 /**
  * Class StyleRegistry
  * Registry for all used styles
  */
-class StyleRegistry extends \Box\Spout\Writer\Common\Manager\Style\StyleRegistry
+class StyleRegistry extends \Rancherusermaker\Spout\Writer\Common\Manager\Style\StyleRegistry
 {
     /** @var array [FONT_NAME] => [] Map whose keys contain all the fonts used */
     protected $usedFontsSet = [];

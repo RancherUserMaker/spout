@@ -1,24 +1,24 @@
 <?php
 
-namespace Box\Spout\Writer\XLSX\Manager;
+namespace Rancherusermaker\Spout\Writer\XLSX\Manager;
 
-use Box\Spout\Common\Entity\Cell;
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Entity\Style\Style;
-use Box\Spout\Common\Exception\InvalidArgumentException;
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Common\Helper\Escaper\XLSX as XLSXEscaper;
-use Box\Spout\Common\Helper\StringHelper;
-use Box\Spout\Common\Manager\OptionsManagerInterface;
-use Box\Spout\Writer\Common\Creator\InternalEntityFactory;
-use Box\Spout\Writer\Common\Entity\Options;
-use Box\Spout\Writer\Common\Entity\Worksheet;
-use Box\Spout\Writer\Common\Helper\CellHelper;
-use Box\Spout\Writer\Common\Manager\RegisteredStyle;
-use Box\Spout\Writer\Common\Manager\RowManager;
-use Box\Spout\Writer\Common\Manager\Style\StyleMerger;
-use Box\Spout\Writer\Common\Manager\WorksheetManagerInterface;
-use Box\Spout\Writer\XLSX\Manager\Style\StyleManager;
+use Rancherusermaker\Spout\Common\Entity\Cell;
+use Rancherusermaker\Spout\Common\Entity\Row;
+use Rancherusermaker\Spout\Common\Entity\Style\Style;
+use Rancherusermaker\Spout\Common\Exception\InvalidArgumentException;
+use Rancherusermaker\Spout\Common\Exception\IOException;
+use Rancherusermaker\Spout\Common\Helper\Escaper\XLSX as XLSXEscaper;
+use Rancherusermaker\Spout\Common\Helper\StringHelper;
+use Rancherusermaker\Spout\Common\Manager\OptionsManagerInterface;
+use Rancherusermaker\Spout\Writer\Common\Creator\InternalEntityFactory;
+use Rancherusermaker\Spout\Writer\Common\Entity\Options;
+use Rancherusermaker\Spout\Writer\Common\Entity\Worksheet;
+use Rancherusermaker\Spout\Writer\Common\Helper\CellHelper;
+use Rancherusermaker\Spout\Writer\Common\Manager\RegisteredStyle;
+use Rancherusermaker\Spout\Writer\Common\Manager\RowManager;
+use Rancherusermaker\Spout\Writer\Common\Manager\Style\StyleMerger;
+use Rancherusermaker\Spout\Writer\Common\Manager\WorksheetManagerInterface;
+use Rancherusermaker\Spout\Writer\XLSX\Manager\Style\StyleManager;
 
 /**
  * Class WorksheetManager

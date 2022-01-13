@@ -1,14 +1,14 @@
 <?php
 
-namespace Box\Spout\Reader\XLSX\Manager;
+namespace Rancherusermaker\Spout\Reader\XLSX\Manager;
 
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Reader\Exception\XMLProcessingException;
-use Box\Spout\Reader\Wrapper\XMLReader;
-use Box\Spout\Reader\XLSX\Creator\HelperFactory;
-use Box\Spout\Reader\XLSX\Creator\InternalEntityFactory;
-use Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
-use Box\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyInterface;
+use Rancherusermaker\Spout\Common\Exception\IOException;
+use Rancherusermaker\Spout\Reader\Exception\XMLProcessingException;
+use Rancherusermaker\Spout\Reader\Wrapper\XMLReader;
+use Rancherusermaker\Spout\Reader\XLSX\Creator\HelperFactory;
+use Rancherusermaker\Spout\Reader\XLSX\Creator\InternalEntityFactory;
+use Rancherusermaker\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
+use Rancherusermaker\Spout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyInterface;
 
 /**
  * Class SharedStringsManager
@@ -93,7 +93,7 @@ class SharedStringsManager
      * The XML file can be really big with sheets containing a lot of data. That is why
      * we need to use a XML reader that provides streaming like the XMLReader library.
      *
-     * @throws \Box\Spout\Common\Exception\IOException If shared strings XML file can't be read
+     * @throws \Rancherusermaker\Spout\Common\Exception\IOException If shared strings XML file can't be read
      * @return void
      */
     public function extractSharedStrings()
@@ -131,8 +131,8 @@ class SharedStringsManager
     /**
      * Returns the shared strings unique count, as specified in <sst> tag.
      *
-     * @param \Box\Spout\Reader\Wrapper\XMLReader $xmlReader XMLReader instance
-     * @throws \Box\Spout\Common\Exception\IOException If sharedStrings.xml is invalid and can't be read
+     * @param \Rancherusermaker\Spout\Reader\Wrapper\XMLReader $xmlReader XMLReader instance
+     * @throws \Rancherusermaker\Spout\Common\Exception\IOException If sharedStrings.xml is invalid and can't be read
      * @return int|null Number of unique shared strings in the sharedStrings.xml file
      */
     protected function getSharedStringsUniqueCount($xmlReader)
@@ -147,7 +147,7 @@ class SharedStringsManager
         $uniqueCount = $xmlReader->getAttribute(self::XML_ATTRIBUTE_UNIQUE_COUNT);
 
         // some software do not add the "uniqueCount" attribute but only use the "count" one
-        // @see https://github.com/box/spout/issues/254
+        // @see https://github.com/Rancherusermaker/spout/issues/254
         if ($uniqueCount === null) {
             $uniqueCount = $xmlReader->getAttribute(self::XML_ATTRIBUTE_COUNT);
         }
@@ -170,7 +170,7 @@ class SharedStringsManager
     /**
      * Processes the shared strings item XML node which the given XML reader is positioned on.
      *
-     * @param \Box\Spout\Reader\Wrapper\XMLReader $xmlReader XML Reader positioned on a "<si>" node
+     * @param \Rancherusermaker\Spout\Reader\Wrapper\XMLReader $xmlReader XML Reader positioned on a "<si>" node
      * @param int $sharedStringIndex Index of the processed shared strings item
      * @return void
      */
@@ -226,7 +226,7 @@ class SharedStringsManager
      * Returns the shared string at the given index, using the previously chosen caching strategy.
      *
      * @param int $sharedStringIndex Index of the shared string in the sharedStrings.xml file
-     * @throws \Box\Spout\Reader\Exception\SharedStringNotFoundException If no shared string found for the given index
+     * @throws \Rancherusermaker\Spout\Reader\Exception\SharedStringNotFoundException If no shared string found for the given index
      * @return string The shared string at the given index
      */
     public function getStringAtIndex($sharedStringIndex)

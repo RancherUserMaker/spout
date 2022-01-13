@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Common\Entity;
+namespace Rancherusermaker\Spout\Common\Entity;
 
-use Box\Spout\Common\Entity\Style\Style;
+use Rancherusermaker\Spout\Common\Entity\Style\Style;
 
 class Row
 {

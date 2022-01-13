@@ -1,11 +1,11 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Creator\Style;
+namespace Rancherusermaker\Spout\Writer\Common\Creator\Style;
 
-use Box\Spout\Common\Entity\Style\Border;
-use Box\Spout\Common\Entity\Style\CellAlignment;
-use Box\Spout\Common\Entity\Style\Style;
-use Box\Spout\Common\Exception\InvalidArgumentException;
+use Rancherusermaker\Spout\Common\Entity\Style\Border;
+use Rancherusermaker\Spout\Common\Entity\Style\CellAlignment;
+use Rancherusermaker\Spout\Common\Entity\Style\Style;
+use Rancherusermaker\Spout\Common\Exception\InvalidArgumentException;
 
 /**
  * Class StyleBuilder

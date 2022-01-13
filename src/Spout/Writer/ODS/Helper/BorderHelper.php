@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Writer\ODS\Helper;
+namespace Rancherusermaker\Spout\Writer\ODS\Helper;
 
-use Box\Spout\Common\Entity\Style\Border;
-use Box\Spout\Common\Entity\Style\BorderPart;
+use Rancherusermaker\Spout\Common\Entity\Style\Border;
+use Rancherusermaker\Spout\Common\Entity\Style\BorderPart;
 
 /**
  * Class BorderHelper

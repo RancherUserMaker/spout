@@ -1,15 +1,15 @@
 <?php
 
-namespace Box\Spout\Reader\CSV;
+namespace Rancherusermaker\Spout\Reader\CSV;
 
-use Box\Spout\Reader\SheetInterface;
+use Rancherusermaker\Spout\Reader\SheetInterface;
 
 /**
  * Class Sheet
  */
 class Sheet implements SheetInterface
 {
-    /** @var \Box\Spout\Reader\CSV\RowIterator To iterate over the CSV's rows */
+    /** @var \Rancherusermaker\Spout\Reader\CSV\RowIterator To iterate over the CSV's rows */
     protected $rowIterator;
 
     /**
@@ -21,7 +21,7 @@ class Sheet implements SheetInterface
     }
 
     /**
-     * @return \Box\Spout\Reader\CSV\RowIterator
+     * @return \Rancherusermaker\Spout\Reader\CSV\RowIterator
      */
     public function getRowIterator()
     {

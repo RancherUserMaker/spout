@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Reader\ODS;
+namespace Rancherusermaker\Spout\Reader\ODS;
 
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Reader\ODS\Creator\InternalEntityFactory;
-use Box\Spout\Reader\ReaderAbstract;
+use Rancherusermaker\Spout\Common\Exception\IOException;
+use Rancherusermaker\Spout\Reader\ODS\Creator\InternalEntityFactory;
+use Rancherusermaker\Spout\Reader\ReaderAbstract;
 
 /**
  * Class Reader
@@ -32,8 +32,8 @@ class Reader extends ReaderAbstract
      * Opens the file at the given file path to make it ready to be read.
      *
      * @param  string $filePath Path of the file to be read
-     * @throws \Box\Spout\Common\Exception\IOException If the file at the given path or its content cannot be read
-     * @throws \Box\Spout\Reader\Exception\NoSheetsFoundException If there are no sheets in the file
+     * @throws \Rancherusermaker\Spout\Common\Exception\IOException If the file at the given path or its content cannot be read
+     * @throws \Rancherusermaker\Spout\Reader\Exception\NoSheetsFoundException If there are no sheets in the file
      * @return void
      */
     protected function openReader($filePath)

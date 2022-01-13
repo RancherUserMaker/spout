@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Writer\CSV\Manager;
+namespace Rancherusermaker\Spout\Writer\CSV\Manager;
 
-use Box\Spout\Common\Manager\OptionsManagerAbstract;
-use Box\Spout\Writer\Common\Entity\Options;
+use Rancherusermaker\Spout\Common\Manager\OptionsManagerAbstract;
+use Rancherusermaker\Spout\Writer\Common\Entity\Options;
 
 /**
  * Class OptionsManager

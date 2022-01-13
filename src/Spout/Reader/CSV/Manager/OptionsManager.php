@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Reader\CSV\Manager;
+namespace Rancherusermaker\Spout\Reader\CSV\Manager;
 
-use Box\Spout\Common\Helper\EncodingHelper;
-use Box\Spout\Common\Manager\OptionsManagerAbstract;
-use Box\Spout\Reader\Common\Entity\Options;
+use Rancherusermaker\Spout\Common\Helper\EncodingHelper;
+use Rancherusermaker\Spout\Common\Manager\OptionsManagerAbstract;
+use Rancherusermaker\Spout\Reader\Common\Entity\Options;
 
 /**
  * Class OptionsManager

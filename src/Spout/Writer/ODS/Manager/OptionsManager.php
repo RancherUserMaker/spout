@@ -1,10 +1,10 @@
 <?php
 
-namespace Box\Spout\Writer\ODS\Manager;
+namespace Rancherusermaker\Spout\Writer\ODS\Manager;
 
-use Box\Spout\Common\Manager\OptionsManagerAbstract;
-use Box\Spout\Writer\Common\Creator\Style\StyleBuilder;
-use Box\Spout\Writer\Common\Entity\Options;
+use Rancherusermaker\Spout\Common\Manager\OptionsManagerAbstract;
+use Rancherusermaker\Spout\Writer\Common\Creator\Style\StyleBuilder;
+use Rancherusermaker\Spout\Writer\Common\Entity\Options;
 
 /**
  * Class OptionsManager

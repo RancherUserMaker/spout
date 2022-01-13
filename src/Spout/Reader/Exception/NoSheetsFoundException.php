@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Reader\Exception;
+namespace Rancherusermaker\Spout\Reader\Exception;
 
 /**
  * Class NoSheetsFoundException

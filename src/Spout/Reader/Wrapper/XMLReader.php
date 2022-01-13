@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Reader\Wrapper;
+namespace Rancherusermaker\Spout\Reader\Wrapper;
 
 /**
  * Class XMLReader
@@ -80,7 +80,7 @@ class XMLReader extends \XMLReader
      * Move to next node in document
      * @see \XMLReader::read
      *
-     * @throws \Box\Spout\Reader\Exception\XMLProcessingException If an error/warning occurred
+     * @throws \Rancherusermaker\Spout\Reader\Exception\XMLProcessingException If an error/warning occurred
      * @return bool TRUE on success or FALSE on failure
      */
     public function read()
@@ -98,7 +98,7 @@ class XMLReader extends \XMLReader
      * Read until the element with the given name is found, or the end of the file.
      *
      * @param string $nodeName Name of the node to find
-     * @throws \Box\Spout\Reader\Exception\XMLProcessingException If an error/warning occurred
+     * @throws \Rancherusermaker\Spout\Reader\Exception\XMLProcessingException If an error/warning occurred
      * @return bool TRUE on success or FALSE on failure
      */
     public function readUntilNodeFound($nodeName)
@@ -116,7 +116,7 @@ class XMLReader extends \XMLReader
      * @see \XMLReader::next
      *
      * @param string|null $localName The name of the next node to move to
-     * @throws \Box\Spout\Reader\Exception\XMLProcessingException If an error/warning occurred
+     * @throws \Rancherusermaker\Spout\Reader\Exception\XMLProcessingException If an error/warning occurred
      * @return bool TRUE on success or FALSE on failure
      */
     public function next($localName = null)
@@ -157,7 +157,7 @@ class XMLReader extends \XMLReader
     {
         // In some cases, the node has a prefix (for instance, "<sheet>" can also be "<x:sheet>").
         // So if the given node name does not have a prefix, we need to look at the unprefixed name ("localName").
-        // @see https://github.com/box/spout/issues/233
+        // @see https://github.com/Rancherusermaker/spout/issues/233
         $hasPrefix = (\strpos($nodeName, ':') !== false);
         $currentNodeName = ($hasPrefix) ? $this->name : $this->localName;
 

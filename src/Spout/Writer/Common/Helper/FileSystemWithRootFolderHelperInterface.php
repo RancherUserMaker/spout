@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Helper;
+namespace Rancherusermaker\Spout\Writer\Common\Helper;
 
-use Box\Spout\Common\Helper\FileSystemHelperInterface;
+use Rancherusermaker\Spout\Common\Helper\FileSystemHelperInterface;
 
 /**
  * Class FileSystemHelperInterface
@@ -14,7 +14,7 @@ interface FileSystemWithRootFolderHelperInterface extends FileSystemHelperInterf
     /**
      * Creates all the folders needed to create a spreadsheet, as well as the files that won't change.
      *
-     * @throws \Box\Spout\Common\Exception\IOException If unable to create at least one of the base folders
+     * @throws \Rancherusermaker\Spout\Common\Exception\IOException If unable to create at least one of the base folders
      * @return void
      */
     public function createBaseFilesAndFolders();

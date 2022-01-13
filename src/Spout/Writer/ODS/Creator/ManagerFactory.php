@@ -1,17 +1,17 @@
 <?php
 
-namespace Box\Spout\Writer\ODS\Creator;
+namespace Rancherusermaker\Spout\Writer\ODS\Creator;
 
-use Box\Spout\Common\Manager\OptionsManagerInterface;
-use Box\Spout\Writer\Common\Creator\InternalEntityFactory;
-use Box\Spout\Writer\Common\Creator\ManagerFactoryInterface;
-use Box\Spout\Writer\Common\Entity\Options;
-use Box\Spout\Writer\Common\Manager\SheetManager;
-use Box\Spout\Writer\Common\Manager\Style\StyleMerger;
-use Box\Spout\Writer\ODS\Manager\Style\StyleManager;
-use Box\Spout\Writer\ODS\Manager\Style\StyleRegistry;
-use Box\Spout\Writer\ODS\Manager\WorkbookManager;
-use Box\Spout\Writer\ODS\Manager\WorksheetManager;
+use Rancherusermaker\Spout\Common\Manager\OptionsManagerInterface;
+use Rancherusermaker\Spout\Writer\Common\Creator\InternalEntityFactory;
+use Rancherusermaker\Spout\Writer\Common\Creator\ManagerFactoryInterface;
+use Rancherusermaker\Spout\Writer\Common\Entity\Options;
+use Rancherusermaker\Spout\Writer\Common\Manager\SheetManager;
+use Rancherusermaker\Spout\Writer\Common\Manager\Style\StyleMerger;
+use Rancherusermaker\Spout\Writer\ODS\Manager\Style\StyleManager;
+use Rancherusermaker\Spout\Writer\ODS\Manager\Style\StyleRegistry;
+use Rancherusermaker\Spout\Writer\ODS\Manager\WorkbookManager;
+use Rancherusermaker\Spout\Writer\ODS\Manager\WorksheetManager;
 
 /**
  * Class ManagerFactory

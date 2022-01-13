@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Reader\Exception;
+namespace Rancherusermaker\Spout\Reader\Exception;
 
-use Box\Spout\Common\Exception\SpoutException;
+use Rancherusermaker\Spout\Common\Exception\SpoutException;
 
 /**
  * Class ReaderException

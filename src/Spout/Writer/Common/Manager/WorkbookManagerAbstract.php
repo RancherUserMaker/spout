@@ -1,21 +1,21 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Manager;
+namespace Rancherusermaker\Spout\Writer\Common\Manager;
 
-use Box\Spout\Common\Entity\Row;
-use Box\Spout\Common\Exception\IOException;
-use Box\Spout\Common\Manager\OptionsManagerInterface;
-use Box\Spout\Writer\Common\Creator\InternalEntityFactory;
-use Box\Spout\Writer\Common\Creator\ManagerFactoryInterface;
-use Box\Spout\Writer\Common\Entity\Options;
-use Box\Spout\Writer\Common\Entity\Sheet;
-use Box\Spout\Writer\Common\Entity\Workbook;
-use Box\Spout\Writer\Common\Entity\Worksheet;
-use Box\Spout\Writer\Common\Helper\FileSystemWithRootFolderHelperInterface;
-use Box\Spout\Writer\Common\Manager\Style\StyleManagerInterface;
-use Box\Spout\Writer\Common\Manager\Style\StyleMerger;
-use Box\Spout\Writer\Exception\SheetNotFoundException;
-use Box\Spout\Writer\Exception\WriterException;
+use Rancherusermaker\Spout\Common\Entity\Row;
+use Rancherusermaker\Spout\Common\Exception\IOException;
+use Rancherusermaker\Spout\Common\Manager\OptionsManagerInterface;
+use Rancherusermaker\Spout\Writer\Common\Creator\InternalEntityFactory;
+use Rancherusermaker\Spout\Writer\Common\Creator\ManagerFactoryInterface;
+use Rancherusermaker\Spout\Writer\Common\Entity\Options;
+use Rancherusermaker\Spout\Writer\Common\Entity\Sheet;
+use Rancherusermaker\Spout\Writer\Common\Entity\Workbook;
+use Rancherusermaker\Spout\Writer\Common\Entity\Worksheet;
+use Rancherusermaker\Spout\Writer\Common\Helper\FileSystemWithRootFolderHelperInterface;
+use Rancherusermaker\Spout\Writer\Common\Manager\Style\StyleManagerInterface;
+use Rancherusermaker\Spout\Writer\Common\Manager\Style\StyleMerger;
+use Rancherusermaker\Spout\Writer\Exception\SheetNotFoundException;
+use Rancherusermaker\Spout\Writer\Exception\WriterException;
 
 /**
  * Class WorkbookManagerAbstract
@@ -117,7 +117,7 @@ abstract class WorkbookManagerAbstract implements WorkbookManagerInterface
     /**
      * Creates a new sheet in the workbook. The current sheet remains unchanged.
      *
-     * @throws \Box\Spout\Common\Exception\IOException If unable to open the sheet for writing
+     * @throws \Rancherusermaker\Spout\Common\Exception\IOException If unable to open the sheet for writing
      * @return Worksheet The created sheet
      */
     private function addNewSheet()

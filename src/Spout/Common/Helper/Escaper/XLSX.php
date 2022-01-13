@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Common\Helper\Escaper;
+namespace Rancherusermaker\Spout\Common\Helper\Escaper;
 
 /**
  * Class XLSX

@@ -1,9 +1,9 @@
 <?php
 
-namespace Box\Spout\Writer\Exception\Border;
+namespace Rancherusermaker\Spout\Writer\Exception\Border;
 
-use Box\Spout\Common\Entity\Style\BorderPart;
-use Box\Spout\Writer\Exception\WriterException;
+use Rancherusermaker\Spout\Common\Entity\Style\BorderPart;
+use Rancherusermaker\Spout\Writer\Exception\WriterException;
 
 class InvalidStyleException extends WriterException
 {

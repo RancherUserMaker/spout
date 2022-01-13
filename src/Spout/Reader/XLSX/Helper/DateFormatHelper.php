@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Reader\XLSX\Helper;
+namespace Rancherusermaker\Spout\Reader\XLSX\Helper;
 
 /**
  * Class DateFormatHelper

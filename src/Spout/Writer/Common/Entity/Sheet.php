@@ -1,8 +1,8 @@
 <?php
 
-namespace Box\Spout\Writer\Common\Entity;
+namespace Rancherusermaker\Spout\Writer\Common\Entity;
 
-use Box\Spout\Writer\Common\Manager\SheetManager;
+use Rancherusermaker\Spout\Writer\Common\Manager\SheetManager;
 
 /**
  * Class Sheet
@@ -26,7 +26,7 @@ class Sheet
 
     /** @var SheetManager Sheet manager */
     private $sheetManager;
-    
+
     /** @var merge cell */
     private $mergeRanges;
 
@@ -79,7 +79,7 @@ class Sheet
      *  - it should be unique
      *
      * @param string $name Name of the sheet
-     * @throws \Box\Spout\Writer\Exception\InvalidSheetNameException If the sheet's name is invalid.
+     * @throws \Rancherusermaker\Spout\Writer\Exception\InvalidSheetNameException If the sheet's name is invalid.
      * @return Sheet
      */
     public function setName($name)
@@ -111,7 +111,7 @@ class Sheet
 
         return $this;
     }
-    
+
      /**
      * @return merge
      */

@@ -1,6 +1,6 @@
 <?php
 
-namespace Box\Spout\Reader\Common\Entity;
+namespace Rancherusermaker\Spout\Reader\Common\Entity;
 
 /**
  * Class Options

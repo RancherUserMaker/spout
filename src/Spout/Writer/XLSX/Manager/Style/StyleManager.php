@@ -1,16 +1,16 @@
 <?php
 
-namespace Box\Spout\Writer\XLSX\Manager\Style;
+namespace Rancherusermaker\Spout\Writer\XLSX\Manager\Style;
 
-use Box\Spout\Common\Entity\Style\Color;
-use Box\Spout\Common\Entity\Style\Style;
-use Box\Spout\Writer\XLSX\Helper\BorderHelper;
+use Rancherusermaker\Spout\Common\Entity\Style\Color;
+use Rancherusermaker\Spout\Common\Entity\Style\Style;
+use Rancherusermaker\Spout\Writer\XLSX\Helper\BorderHelper;
 
 /**
  * Class StyleManager
  * Manages styles to be applied to a cell
  */
-class StyleManager extends \Box\Spout\Writer\Common\Manager\Style\StyleManager
+class StyleManager extends \Rancherusermaker\Spout\Writer\Common\Manager\Style\StyleManager
 {
     /** @var StyleRegistry */
     protected $styleRegistry;
@@ -186,17 +186,17 @@ EOD;
         $content .= '<border><left/><right/><top/><bottom/></border>';
 
         foreach ($registeredBorders as $styleId) {
-            /** @var \Box\Spout\Common\Entity\Style\Style $style */
+            /** @var \Rancherusermaker\Spout\Common\Entity\Style\Style $style */
             $style = $this->styleRegistry->getStyleFromStyleId($styleId);
             $border = $style->getBorder();
             $content .= '<border>';
 
-            // @link https://github.com/box/spout/issues/271
+            // @link https://github.com/Rancherusermaker/spout/issues/271
             $sortOrder = ['left', 'right', 'top', 'bottom'];
 
             foreach ($sortOrder as $partName) {
                 if ($border->hasPart($partName)) {
-                    /** @var $part \Box\Spout\Common\Entity\Style\BorderPart */
+                    /** @var $part \Rancherusermaker\Spout\Common\Entity\Style\BorderPart */
                     $part = $border->getPart($partName);
                     $content .= BorderHelper::serializeBorderPart($part);
                 }
